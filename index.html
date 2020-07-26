@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/bed73fd364.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="app.css" />
+        <title>Eventer</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4 text-center">
+                <i class="fas fa-clipboard text-primary"></i>
+                EVENT<span class="text-primary"> DECIDER</span></h1>
+       
+       </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link active home_link" href= "#">Home</a></li>
+                <li class="nav-item"><a class="nav-link form_link" href = "#">Register Form</a></li>
+                <li class="nav-item"><a class="nav-link list_link" id="ii2" href = "#">Registrant list</a></li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>  
+          </nav>
+          <div id = "home" >
+            <br>
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+            
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                  <img class = "image" src="coding.jpg">
+                  <div class="carousel-caption">
+                    <h3><b>Coding Event</b></h3>
+                    <p>Let's unleash your coding skills.</p>
+                    <h5>Starts at 10:00 AM on Tuesday</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  
+                  <img class = "image" src="sports2.jpg">
+                  <div class="carousel-caption">
+                    <h3><b>Sports Event</b></h3>
+                    <p>Show your sportsman spirit.</p>
+                    <h5>Starts at 11:00 AM on Wednesday</h5>
+                  </div>
+          
+                </div>
+                <div class="carousel-item">
+                  
+                  <img class = "image" src="dance.jpg">
+                  <div class="carousel-caption">
+                    <h3><b>Dance Event</b></h3>
+                    <p>Let's Rock n Roll.</p>
+                    <h5>Starts at 12:00 PM on Thursday</h5>
+                  </div>
+          
+                </div>
+              </div>
+            
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            
+            </div>
+          </div>
+        
+        <div id="register_form" class="container">
+            <div class = "card">
+                <br>
+                <h1 class = "card-header bg-primary text-white">Registration Form</h1>
+                <div class="card-body col-lg-6 m-auto">
+            <form id="form_register" >
+                <div class="form-group">
+					<label for="user" class="font-weight-bold"> Name: </label>
+					<input type="text" name="user" class="form-control" id="user" placeholder = "name" autocomplete="off">
+					<span id="username" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> College: </label>
+					<input type="text" name="pass" class="form-control" placeholder = "College name" id="pass" autocomplete="off">
+					<span id="passwords" class="text-danger font-weight-bold"> </span>
+        </div>
+        
+				<div class="form-group">
+					<label class="font-weight-bold"> Mobile Number: </label>
+					<input type="text" name="mobile" class="form-control" placeholder = "mobile" id="mobileNumber" autocomplete="off">
+					<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Email: </label>
+					<input type="text" name="email" class="form-control" id="emails" placeholder = "email id" autocomplete="off">
+					<span id="emailids" class="text-danger font-weight-bold"> </span>
+				</div>
+        <div class = "form-group">
+
+          
+            <label class = "font-weight-bold"> Event: </label>
+            <select id="ddlView">
+              <option value="0">Select</option>
+              <option value="1">Coding Event</option>
+              <option value="2">Sports Event</option>
+              <option value="3">Dance Event</option>
+          </select>  
+          <span id="drop" class="text-danger font-weight-bold"> </span>
+      
+          
+        </div>
+        <input type="submit" name="submit" value="Submit" class="btn btn-success success" 	autocomplete="off">
+        <input type="submit" name="cancel" value="Cancel" class="btn btn-danger cancel" 	autocomplete="off">
+            </form><br>
+            </div>
+            </div>
+                  
+        </div>
+        
+        
+        <div id="registrant_list" class = "container-fluid">
+            
+                
+                <div class = "card-body col-lg-6 m-auto">
+                  <div class="col-12">
+                    <div class="table-responsive">
+                      <table class="table table-striped mt-5 co">
+                        <thead class="thread-dark">
+                          <tr>
+                            <th>Name</th>
+                            <th>College</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                            <th>Event</th>
+                            <th>TimeStamp</th>
+                          </tr>
+                        </thead>
+                        <tbody class = "values">
+                       
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <footer class="footer">
+              <div class="container-fluid">
+                  <p>&copy; Copyright 2020</p>
+                  <a href="mailto:ydgaur@mitaoe.ac.in">ydgaur@mitaoe.ac.in</a></p>
+              </div>
+              </footer>
+           
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="main.js"></script>    
+    </body>
+</html>

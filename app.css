@@ -1,0 +1,31 @@
+#registrant_list {
+  display: none;
+}
+
+#register_form {
+  display: none;
+}
+
+.carousel-item img{
+  height: 800px;
+  width: 100%;
+}
+
+.carousel-control-next-icon{
+  height: 40px;
+  width: 40px;
+}
+
+.carousel-control-prev-icon{
+  height: 40px;
+  width: 40px;
+}
+
+footer{
+  font-family: sans-serif;  
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(181, 216, 231);
+  color: black;
+}
