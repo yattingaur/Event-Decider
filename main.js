@@ -144,6 +144,7 @@ function validation(ev) {
 
   document.querySelector("#registrant_list").style.display = "block";
   document.querySelector("#register_form").style.display = "none";
+  document.querySelector(".card_head").innerHTML = "Participants Data";
 }
 
 let form_button = document.querySelector(".form_link");
@@ -155,6 +156,12 @@ form_button.addEventListener("click", () => {
 
 let list_button = document.querySelector(".list_link");
 list_button.addEventListener("click", () => {
+  let table = document.querySelector(".table").rows.length;
+  if (table < 2) {
+    document.querySelector(".card_head").innerHTML = "NO DATA";
+  } else {
+    document.querySelector(".card_head").innerHTML = "Participants Data";
+  }
   document.querySelector("#home").style.display = "none";
   document.querySelector("#registrant_list").style.display = "inline";
   document.querySelector("#register_form").style.display = "none";
